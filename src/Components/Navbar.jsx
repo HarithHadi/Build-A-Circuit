@@ -18,7 +18,7 @@ export default function Navbar() {
             <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
 
                 {/* Brand */}
-                <span className="text-lg font-semibold text-[#9fcdff]">Build-A-Circuit</span>
+                <span className="text-lg font-bold text-[#9fcdff]">Build-A-Circuit</span>
 
                 {/* Desktop Links */}
                 <ul className="hidden md:flex items-center gap-1">
@@ -26,18 +26,13 @@ export default function Navbar() {
                         <li key={to}>
                             <Link
                                 to={to}
-                                className="px-3 py-2 rounded-md text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors"
+                                className="font-semibold px-3 py-2 rounded-md text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors"
                             >
                                 {label}
                             </Link>
                         </li>
                     ))}
                 </ul>
-
-                {/* CTA button (dekstop) */}
-                <button className="hidden md:block px-4 py-2 text-sm font-medium bg-[#9fcdff] text-white rounded-lg hover:bg-gray-700 transition-colors">
-                    Get Started
-                </button>
 
                 {/* Hamburger (mobile) */}
                 <button
@@ -61,7 +56,7 @@ export default function Navbar() {
                     key={to}
                     to={to}
                     onClick={() => setIsOpen(false)}
-                    className="px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100"
+                    className="px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100 font-bold"
                     >
                     {label}
                     </Link>
