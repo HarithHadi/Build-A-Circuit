@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+body {
+  background: #c8d8f5;
+  background-image: radial-gradient(circle, #848994 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+  min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}

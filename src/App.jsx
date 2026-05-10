@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar'
 import {Routes, Route} from "react-router-dom"
 import Home from './pages/Home'
 import Lesson from './pages/Lesson'
+import Quiz from './pages/Quiz'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/lesson" element={<Lesson />} />
+        <Route path="/quiz" element={<Quiz />} />
       </Routes>
     </>
   )

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 
-// TO BE CHANGED
 const topics = [
   {
     id: 1,
@@ -69,25 +68,7 @@ const features = [
 
 export default function Home() {
   return (
-    <div
-        className="min-h-screen"
-        style={{
-            background: "#c8d8f5",   
-            fontFamily: "'Nunito', sans-serif",
-        }}
-    >
-      {/* Decorative dot grid */}
-    <div
-        className="fixed inset-0 pointer-events-none"
-        style={{
-            backgroundImage: `
-            radial-gradient(circle, #5a7abf 1.5px, transparent 1.5px)
-            `,
-            backgroundSize: "24px 24px",
-            opacity: 0.35,
-        }}
-    />
-
+    <div className="min-h-screen">
       {/* ── HERO ── */}
       <section className="relative pt-10 pb-0 px-6">
         <div className="max-w-5xl mx-auto">

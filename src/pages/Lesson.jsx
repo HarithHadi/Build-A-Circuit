@@ -142,22 +142,7 @@ export default function Lesson() {
   const currentIndex = lessons.findIndex((l) => l.id === activeId);
 
   return (
-    <div
-      className="min-h-screen"
-      style={{
-        background: "#c8d8f5",
-        fontFamily: "'Nunito', sans-serif",
-      }}
-    >
-      {/* Dot grid */}
-      <div
-        className="fixed inset-0 pointer-events-none"
-        style={{
-          backgroundImage: "radial-gradient(circle, #5a7abf 1.5px, transparent 1.5px)",
-          backgroundSize: "24px 24px",
-          opacity: 0.35,
-        }}
-      />
+    <div className="min-h-screen">
 
       <div className="relative max-w-5xl mx-auto px-4 py-10">
 
