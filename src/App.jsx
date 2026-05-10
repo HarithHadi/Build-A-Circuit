@@ -6,6 +6,7 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import {Routes, Route} from "react-router-dom"
 import Home from './pages/Home'
+import Lesson from './pages/Lesson'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
        <Navbar />
        <Routes>
         <Route path="/" element={<Home />} />
-        {/* add other pages here */}
+        <Route path="/lesson" element={<Lesson />} />
       </Routes>
     </>
   )
