@@ -543,7 +543,7 @@ function AdminForm({ topics, setTopics, onClose }) {
             <div className="flex flex-col gap-6">
 
               {/* Add question form */}
-              <div className="p-5 rounded-2xl flex flex-col gap-4" style={{ background: "rgba(78,110,242,0.05)", border: "1.5px dashed rgba(78,110,242,0.25)" }}>
+              <div className="p-5 rounded-2xl flex flex-col gap-4" style={{ background: "rgba(78,110,242,0.7)", border: "1.5px dashed rgba(78,110,242,0.25)" }}>
                 <p className="text-xs font-black tracking-widest uppercase" style={{ color: "#7a8bbf" }}>Add Question</p>
 
                 <div>
@@ -731,7 +731,7 @@ export default function Quiz() {
                 onClick={() => t.questions.length > 0 && setActiveTopic(t.id)}
               >
                 {/* Color bar */}
-                <div className="h-1.5 w-full" style={{ background: t.color }} />
+                {/* <div className="h-1.5 w-full" style={{ background: t.color }} /> */}
 
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-4">
